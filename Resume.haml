@@ -1,0 +1,345 @@
+%html
+  %head
+    %title Jack Huang's Resume
+    %style{:type => "text/css"}
+      :plain
+        .header{
+          -webkit-print-color-adjust:exact;
+          background-color:#45423F;
+          height:110px;
+          width:100%;
+          text-align:right;
+          color: White;
+          width: 930px;
+          margin: 0 auto;
+          padding-bottom: 10px;
+        }
+
+        .header a{
+          color: #dbffdb;
+          text-decoration: none;
+          border-bottom: 1px dotted;
+        }
+
+        .header a:hover{
+          border-bottom: none;
+        }
+
+        .leftCol{
+          text-align: left;
+          padding-left: 40;
+        }
+
+        .rightCol{
+          padding-right: 15;
+          vertical-align: bottom;
+        }
+
+        .infoTable{
+          width:100%;
+        }
+
+        .infoRightCol{
+          text-align:right;
+        }
+
+        .eduWaterloo{
+          padding-left:30px;
+        }
+
+        .compPara{
+          margin-bottom:5px;
+          margin-top:0px;
+        }
+
+        .lowTopMargin{
+          margin-top:0px;
+        }
+
+        .lowBottomMargin{
+          margin-bottom:5px;
+        }
+
+        .name{
+          text-align: left;
+          font-family: Cambria;
+          font-size: 50px;
+          font-weight: bold;
+          padding-left: 15;
+        }
+
+        .body{
+          width: 900px;
+          margin: 0 auto;
+          color: #222222;
+        }
+
+        a{
+          color: #417341;
+          text-decoration: none;
+          border-bottom: 1px dotted;
+        }
+
+        table{
+          color: #222222;
+        }
+
+        h2{
+          margin-bottom: 0px;
+          margin-top: 30px;
+        }
+
+        .floatRight{
+          float: right;
+        }
+
+
+  %body
+    %table.header
+      %tr
+        %td.name Jack Huang
+      %tr
+        %td.leftCol jackhxs@gmail.com
+        %td.rightCol
+          %a{:href => "http://jack-huang.com"} jack-huang.com
+      %tr
+        %td.leftCol 647-739-8995
+        %td.rightCol
+          %a{:href => "http://github.com/lanjian"} github.com/lanjian
+      %tr
+    .body
+      %h2 SKILLS SUMMARY
+      %hr
+      %ul
+        %li Excellent understanding of fundamental programming concepts including OOP, functional programming, and software design patterns obtained through school and self-study
+        %li Experienced with building web applications and Android applications
+        %li Familiar with game development; complemented by strong background in fine arts
+        %li Demonstrated creativity and skill in visual arts through personal artworks
+        %li Strong problem solving skills; demonstrated by math and programming contest results
+        %li Good communication skills; Fluent in Chinese
+
+      %h2 COMPUTER PROFICIENCY
+      %hr
+      %p.compPara
+        %b Languages:
+        JavaScript, C++, C, Java, Haskell, Python, Ruby, Scheme, ActionScript, Scala, VB, HTML, CSS, MEL
+      %p.compPara
+        %b Technologies/Tools:
+        OpenGL, WebGL, Vim, Git, SVN, Perforce, Make, Bash, Batch, SSIS, JSP
+      %p.compPara
+        %b Frameworks/Libraries:
+        jQuery, Node.Js, Three.Js, Closure, Rails, GWT, Swing, Facebook API
+      %p.compPara
+        %b Platforms:
+        Linux, Windows, OS X, Android, iOS
+      %p.compPara
+        %b Databases:
+        MongoDB, SQL
+      %p.compPara
+        %b Applications:
+        Eclipse, Visual Studio, MS SQL Server, Photoshop, Illustrator, Flash, Autodesk Maya
+      %ul
+        %li Knowledge of 3D graphics concepts and technologies
+        %li Familiar with multithreading and concurrency
+
+      %h2 WORK EXPERIENCE
+      %hr
+
+      %table.infoTable
+        %tr
+          %td
+            %b Software Engineer
+          %td.infoRightCol Toronto, ON
+        %tr
+          %td Side Effects Software Inc.
+          %td.infoRightCol Sept. 2012 - Present
+
+      %ul
+        %li Actively involved in all aspects of a project that allows leading 3D animation package Houdini to be embedded into other applications
+        %li Creating a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists
+        %li
+          %b Technologies Used:
+          C++, Houdini, Vim, Make, SVN
+
+      %table.infoTable
+        %tr
+          %td
+            %b Accessibility Engineer
+          %td.infoRightCol Mountain View, CA
+        %tr
+          %td Google
+          %td.infoRightCol May. 2012 - Aug. 2012
+
+      %ul
+        %li Worked on video closed captioning as a member of the video accessibility team
+        %li Launched user captions customization features on Youtube that enables users to customize caption display styles in support of Communications and Video Accessibility Act technical requirements
+        %li Implemented new rendering capabilities to allow captions in CEA-708 format to be displayed on Youtube
+        %li
+          %b Technologies Used:
+          JavaScript, CSS, HTML, Python, Spitfire(Python template language), Closure
+
+      %table.infoTable
+        %tr
+          %td
+            %b Platform and Game Engineer
+          %td.infoRightCol Redwood Shores, CA
+        %tr
+          %td Bioware San Francisco
+          %td.infoRightCol Sept. 2011 - Dec. 2011
+
+      %ul
+        %li Wrote, maintained, and deployed production level code for games with over 100,000 daily users
+        %li Re-designed and implemented a new gifting system using the new Facebook JavaScript API for the popular social game Dragon Age Legends
+        %li Developed in-game store and integrated it with in-house platform services for an unannounced core social game
+        %li
+          %b Technologies Used:
+          Java, ActionScript, JavaScript, CSS, HTML, GWT, Ruby, Rails, MongoDB, Facebook API, Adobe Flash Builder, Git
+
+      %table.infoTable
+        %tr
+          %td
+            %b Software Developer
+          %td.infoRightCol Montreal, QC
+        %tr
+          %td Autodesk Media & Entertainment
+          %td.infoRightCol Jan. 2011 - Apr. 2011
+
+      %ul
+        %li Worked in a small startup team of 3 developers and contributed significantly to all aspects of the Distributed Simulation project, including design, development, documentation, and quality assurance
+        %li Researched and implemented solutions, through successively-refined prototypes, that would empower artists to produce results more quickly when working with 3D dynamics simulations in Autodesk 3ds Max, Maya, or Softimage
+        %li Designed and implemented a Particle Previewer web application using WebGL that displays particle simulation results
+        %li Adapted quickly to an agile, iterative development process
+        %li
+          %b Technologies Used:
+          Python, MEL, C++, Scala, WebGL, Visual Studio, Maya, 3ds Max, Softimage, Perforce
+
+      %table.infoTable
+        %tr
+          %td
+            %b Java Developer
+          %td.infoRightCol Toronto, ON
+        %tr
+          %td TD Securities
+          %td.infoRightCol May 2010 - Aug. 2010
+
+      %ul
+        %li Responsible for development and support of TD Prime Brokerage website and service
+        %li Learned database technologies through database migration
+        %li Developed various features such as export reports for clients and widgets for the website according to business requirements using a combination of Java EE, SQL, and VB.NET technologies
+        %li Quickly responded to changing client requirements
+        %li
+          %b Technologies Used:
+          Java EE, JSP, VB, MS SQL Server, SSIS
+
+      %h2 PROJECTS
+      %hr
+      %p.lowTopMargin
+        %b Coffee2D Game Engine
+        %span.floatRight Personal, Aug. 2012
+      %ul
+        %li 2D game engine for HTML5 canvas written in CoffeeScript that leverages features such as classes to better integrate with web games written in CoffeeScript
+        %li Designed to be light-weight and easy to use; includes features such as sprites, event handling, and scene graphs.
+        %li 
+          Developed a multiplayer game using the engine at LinkedIn HackDay; source code is available at 
+          %a{:href => "http://github.com/lanjian/gamehack"} github.com/lanjian/gamehack
+
+      %p.lowTopMargin
+        %b Surreal (Graphics Art Project)
+        %span.floatRight Computer Graphics, Apr. 2012
+      %ul
+        %li Interactive world inspired by proto-surrealist paintings of Georgio De Chirico and Yves Tanguy
+        %li Players can walk around in a vast procedurally generated world with an unsettling yet strangely serene atmosphere
+        %li Implemented shadows using shadow maps and a skydome with a day-night cycle to give the world a dynamic feel
+        %li Other features include a particle system and 3D collisions
+
+      %p.lowTopMargin
+        %b Ray Tracer
+        %span.floatRight Computer Graphics, Mar. 2012
+      %ul
+        %li Created a ray tracer in C++ from scratch
+        %li Able to render spheres, cubes, and polygonal meshes
+        %li Features include phong lighting, hard shadows, mirror reflections, and linear fog
+
+      %p.lowTopMargin
+        %b HTML5 Multiplayer Tetris
+        %span.floatRight Personal, Dec. 2011
+      %ul
+        %li Developed a Tetris clone using HTML5 technologies and CoffeeScript
+        %li Currently developing multiplayer head-to-head gameplay over the web with Node.Js
+
+      %p.lowTopMargin
+        %b Android MikroCalendar
+        %span.floatRight User Interfaces, Jul. 2011
+      %ul
+        %li Built the Android user interface for a microblogging system for events
+
+      %p.lowTopMargin
+        %b OS/161 Operating System
+        %span.floatRight Operating Systems, Dec. 2010
+      %ul
+        %li Worked in a team to develop an operating system built on top of OS/161
+        %li Requirements included implementing synchronization primitives, system calls, and a memory management system
+
+
+      %h2 EDUCATION
+      %hr
+
+      %table.infoTable
+        %tr
+          %td
+            %b Candidate for Bachelor of Computer Science,
+            Fine Arts Minor
+          %td.infoRightCol Waterloo, ON
+        %tr
+          %td University of Waterloo
+          %td.infoRightCol Sept. 2008 - Apr. 2013 (expected)
+
+      .eduWaterloo
+        %ul
+          %li
+            Dean's Honours List 4 times
+          %li
+            %b Relevant courses:
+            Computer Graphics, Artificial Intelligence, User Interfaces, Operating Systems
+
+
+      %h2 AWARDS
+      %hr
+      %ul
+        %li Nortel Networks Undergraduate Scholarship, Nortel Networks, Sept. 2008
+        %li President's Scholarship, University of Waterloo, Richmond Hill, ON, Sept. 2008
+        %li Top 2% in 2008 Euclid Contest/Student Honour Roll, University of Waterloo, Richmond Hill, ON, Apr. 2008
+        %li 3rd Place Team in Boardwide Educational Computing Organization of Ontario (ECOO) Programming Contest, ECOO, York University, ON, Apr. 2008
+
+
+      %h2 ACTIVITIES & INTERESTS
+      %hr
+
+      %table.infoTable
+        %tr
+          %td
+            %b VeloCity Mobile + Media Incubator - Member
+          %td.infoRightCol Waterloo, ON
+        %tr
+          %td University of Waterloo
+          %td.infoRightCol Jan. 2012 - Apr. 2012
+      %br
+      %table.infoTable
+        %tr
+          %td
+            %b Ping Pong Club - Member
+          %td.infoRightCol Waterloo, ON
+        %tr
+          %td University of Waterloo
+          %td.infoRightCol Jan. 2009 - Present
+      %br
+      %table.infoTable
+        %tr
+          %td
+            %b Intramurals Soccer - Player
+          %td.infoRightCol Waterloo, ON
+        %tr
+          %td University of Waterloo
+          %td.infoRightCol May 2011 - Aug. 2011
+
+      %p Enjoys ping pong, soccer, video games, drawing, painting, and photography
