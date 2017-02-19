@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'haml', '4.0.6'
+gem 'haml', '4.0.7'
+gem 'guard-haml'
