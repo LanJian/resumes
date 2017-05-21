@@ -1,8 +1,13 @@
 %html
   %head
     %title Jack Huang's Resume
+    %meta{:charset => "UTF-8"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Old+Standard+TT", :rel => "stylesheet"}
     %style{:type => "text/css"}
       :plain
+        * {
+          font-family: 'Old Standard TT', serif;
+        }
         .header{
           -webkit-print-color-adjust:exact;
           background-color:#45423F;
@@ -105,6 +110,7 @@
     %table.header
       %tr
         %td.name Jack Huang
+        %td Backend engineer interested in graphics, VR, and game development
       %tr
         %td.leftCol jackhxs@gmail.com
         %td.rightCol
@@ -115,129 +121,86 @@
           %a{:href => "http://github.com/lanjian"} github.com/lanjian
       %tr
     .body
-      %h2 SKILLS SUMMARY
-      %hr
-      %ul
-        %li Excellent understanding of fundamental programming concepts including OOP, functional programming, and software design patterns obtained through school and self-study
-        %li Experienced with building web applications and Android applications
-        %li Familiar with game development; complemented by strong background in fine arts
-        %li Demonstrated creativity and skill in visual arts through personal artworks
-        %li Strong problem solving skills; demonstrated by math and programming contest results
-        %li Good communication skills; Fluent in Chinese
-
-      %h2 COMPUTER PROFICIENCY
+      %h2 TECHNICAL SKILLS
       %hr
       %p.compPara
         %b Languages:
-        JavaScript, C++, C, Java, Haskell, Python, Ruby, Scheme, Scala, HTML, CSS, MEL
+        Ruby, Java, GoLang, JavaScript, Python, C++, C, Haskell, HTML, CSS
       %p.compPara
-        %b Technologies/Tools:
-        OpenGL, WebGL, Vim, Git, SVN, Perforce, Make, Bash
+        %b Technologies:
+        AWS, Nginx, Docker, OpenGL, WebGL, Git, Make, Bash
       %p.compPara
-        %b Frameworks/Libraries:
-        jQuery, Node.Js, Three.Js, Closure, Rails, GWT, Swing, Facebook API
-      %p.compPara
-        %b Platforms:
-        Linux, Windows, OS X, Android, iOS
+        %b Frameworks:
+        React, Node.Js, A-Frame, Three.Js, Rails
       %p.compPara
         %b Databases:
-        MongoDB, SQL, Redis
+        MySQL, MongoDB, DynamoDB, Redis
       %p.compPara
         %b Applications:
-        Eclipse, Visual Studio, Photoshop, Illustrator, Flash, Autodesk Maya
-      %ul
-        %li Knowledge of 3D graphics concepts and technologies
-        %li Familiar with multithreading and concurrency
+        Unity, Photoshop, Illustrator, Autodesk Maya
 
-      %h2 WORK EXPERIENCE
+      %h2 PROFESSIONAL EXPERIENCES
       %hr
 
       %table.infoTable
         %tr
-          %td
-            %b Backend Software Engineer
-          %td.infoRightCol San Francisco, CA
-        %tr
-          %td SlideShare/LinkedIn
-          %td.infoRightCol July. 2013 - Present
+          %td Backend Software Engineer @ <span style="font-weight: 700"> LinkedIn</span>, San Francisco
+          %td.infoRightCol 2013/07 - Present
 
       %ul
+        %li video
+        %li automation, devops, terraform, infrastructure, deployment system
         %li Implemented scalable system that is responsible for detecting the language of all the slideshows uploaded through SlideShare
-        %li Worked on systems that drastically reduced spam and duplicate slideshows and improved SlideShare's overral content quality
-        %li Maintains and improves the Rich Media Platform that converts and stores all media content uploaded to SlideShare and LinkedIn
+        %li Worked on systems that drastically reduced spam and duplicate slideshows and improved SlideShare's overall content quality
 
       %table.infoTable
         %tr
-          %td
-            %b Software Engineer
-          %td.infoRightCol Toronto, ON
-        %tr
-          %td Side Effects Software Inc.
-          %td.infoRightCol Sept. 2012 - Dec. 2012
+          %td Software Engineer @ <span style="font-weight: 700"> Side Effects</span>, Toronto
+          %td.infoRightCol 2012/09 - 2012/12
 
       %ul
-        %li Actively involved in all aspects of a project that allows leading 3D animation package Houdini to be embedded into other applications
         %li Created a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists
 
       %table.infoTable
         %tr
-          %td
-            %b Accessibility Engineer
-          %td.infoRightCol Mountain View, CA
-        %tr
-          %td Google
-          %td.infoRightCol May. 2012 - Aug. 2012
+          %td Accessibility Engineer @ <span style="font-weight: 700"> Google</span>, Mountain View
+          %td.infoRightCol 2012/05 - 2012/08
 
       %ul
-        %li Worked on video closed captioning as a member of the video accessibility team
         %li Launched user captions customization features on Youtube that enables users to customize caption display styles in support of Communications and Video Accessibility Act technical requirements
         %li Implemented new rendering capabilities to allow captions in CEA-708 format to be displayed on Youtube
 
       %table.infoTable
         %tr
-          %td
-            %b Platform and Game Engineer
-          %td.infoRightCol Redwood Shores, CA
-        %tr
-          %td Bioware San Francisco
-          %td.infoRightCol Sept. 2011 - Dec. 2011
+          %td Game Engineer @ <span style="font-weight: 700"> Electronic Arts</span>, Redwood City
+          %td.infoRightCol 2011/09 - 2011/12
 
       %table.infoTable
         %tr
-          %td
-            %b Software Developer
-          %td.infoRightCol Montreal, QC
-        %tr
-          %td Autodesk Media & Entertainment
-          %td.infoRightCol Jan. 2011 - Apr. 2011
+          %td Software Engineer @ <span style="font-weight: 700"> Autodesk</span>, Montréal
+          %td.infoRightCol 2011/01 - 2011/04
 
-      %table.infoTable
-        %tr
-          %td
-            %b Java Developer
-          %td.infoRightCol Toronto, ON
-        %tr
-          %td TD Securities
-          %td.infoRightCol May 2010 - Aug. 2010
 
       %h2 PROJECTS
       %hr
       %p.lowTopMargin
-        %b Coffee2D Game Engine
-      %ul
-        %li HTML5 2D game engine
-
-      %p.lowTopMargin
-        %b Surreal (Graphics Art Project)
+        %b
+          %a{:href => "https://github.com/LanJian/Surreal"} https://github.com/LanJian/Surreal
       %ul
         %li Interactive world with a surrealist vibe
 
       %p.lowTopMargin
-        %b Ray Tracer
+        %b
+          %a{:href => "https://github.com/LanJian/Raytracers"} https://github.com/LanJian/Raytracers
       %ul
-        %li Created a ray tracer in C++ from scratch
-        %li Able to render spheres, cubes, and polygonal meshes
-        %li Features include phong lighting, hard shadows, mirror reflections, and linear fog
+        %li Ray tracers in C++, Haskell, GoLang, and Ruby
+
+      %p.lowTopMargin
+        %b
+          %a{:href => "https://github.com/LanJian/Coffee2D"} https://github.com/LanJian/Coffee2D
+
+      %ul
+        %li HTML5 2D game engine
 
 
       %h2 EDUCATION
@@ -246,21 +209,8 @@
       %table.infoTable
         %tr
           %td
-            %b Candidate for Bachelor of Computer Science,
+            %b Bachelor of Computer Science,
             Fine Arts Minor
-          %td.infoRightCol Waterloo, ON
+          %td.infoRightCol Class of 2013
         %tr
-          %td University of Waterloo
-          %td.infoRightCol Sept. 2008 - Apr. 2013
-
-      .eduWaterloo
-        %ul
-          %li
-            Dean's Honours List 4 times
-          %li
-            %b Relevant courses:
-            Computer Graphics, Artificial Intelligence, User Interfaces, Operating Systems
-
-      %h2 ACTIVITIES & INTERESTS
-      %hr
-      %p Enjoys ping pong, soccer, video games, drawing, painting, and photography
+          %td University of Waterloo, Canada
