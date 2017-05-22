@@ -97,12 +97,43 @@
         float: right;
       }
       
-      .round-image{
-        box-shadow: 0 0 2px rgba(0, 0, 0, .8);
-        filter: grayscale(50%);
+      .roundImage{
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
+      }
+      
+      .jobContainer{
+        display: inline-block;
+        width:100%;
+      }
+      
+      .jobLogo{
+        display: block;
+        -#margin: auto;
+        max-width: 80%;
+        max-height: 80%;
+        filter: grayscale(70%);
+      }
+      
+      .jobLogoBar{
+        float: left;
+        width: 5%;
+      }
+      
+      .job{
+        margin-top: 7px;
+        float: right;
+        width: 95%;
+      }
+      
+      .autodesk{
+        margin-top: 20px;
+      }
+      
+      .verticalBar{
+        margin-top: 15px;
+        margin-left: 16px;
+        border-left: 3px solid #abbaab;
+        height: 115px;
       }
     </style>
   </head>
@@ -129,71 +160,129 @@
     <div class='body'>
       <h2>TECHNICAL SKILLS</h2>
       <hr>
-      <p class='compPara'>
-        <b>Languages:</b>
-        Ruby, Java, GoLang, JavaScript, Python, C++, C, Haskell, HTML, CSS
-      </p>
-      <p class='compPara'>
-        <b>Technologies:</b>
-        AWS, Nginx, Docker, OpenGL, WebGL, Git, Make, Bash
-      </p>
-      <p class='compPara'>
-        <b>Frameworks:</b>
-        React, Node.Js, A-Frame, Three.Js, Rails
-      </p>
-      <p class='compPara'>
-        <b>Databases:</b>
-        MySQL, MongoDB, DynamoDB, Redis
-      </p>
-      <p class='compPara'>
-        <b>Applications:</b>
-        Unity, Photoshop, Illustrator, Autodesk Maya
-      </p>
+      <table class='infoTable'>
+        <tr>
+          <td></td>
+          <td>***</td>
+          <td>**</td>
+          <td>*</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Languages</b>
+          </td>
+          <td>Ruby, Java</td>
+          <td>GoLang, JavaScript, Python, HTML, CSS</td>
+          <td>C++, C, Haskell,</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Technologies</b>
+          </td>
+          <td>AWS, Git, Bash</td>
+          <td>Docker, OpenGL, WebGL</td>
+          <td>Nginx, Make</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Frameworks</b>
+          </td>
+          <td>React, Node.Js, A-Frame, Three.Js, Rails, Sinatra</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Databases</b>
+          </td>
+          <td>MySQL, MongoDB, DynamoDB, Redis</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Applications</b>
+          </td>
+          <td>Unity, Photoshop, Illustrator, Autodesk Maya</td>
+        </tr>
+      </table>
       <h2>PROFESSIONAL EXPERIENCES</h2>
       <hr>
-      <table class='infoTable'>
-        <tr>
-          <td>Backend Software Engineer @ <span style="font-weight: 700"> LinkedIn</span>, San Francisco</td>
-          <td class='infoRightCol'>2013/07 - Present</td>
-        </tr>
-      </table>
-      <ul>
-        <li>video</li>
-        <li>automation, devops, terraform, infrastructure, deployment system</li>
-        <li>Implemented scalable system that is responsible for detecting the language of all the slideshows uploaded through SlideShare</li>
-        <li>Worked on systems that drastically reduced spam and duplicate slideshows and improved SlideShare's overall content quality</li>
-      </ul>
-      <table class='infoTable'>
-        <tr>
-          <td>Software Engineer @ <span style="font-weight: 700"> Side Effects</span>, Toronto</td>
-          <td class='infoRightCol'>2012/09 - 2012/12</td>
-        </tr>
-      </table>
-      <ul>
-        <li>Created a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists</li>
-      </ul>
-      <table class='infoTable'>
-        <tr>
-          <td>Accessibility Engineer @ <span style="font-weight: 700"> Google</span>, Mountain View</td>
-          <td class='infoRightCol'>2012/05 - 2012/08</td>
-        </tr>
-      </table>
-      <ul>
-        <li>Launched user captions customization features on Youtube that enables users to customize caption display styles in support of Communications and Video Accessibility Act technical requirements</li>
-        <li>Implemented new rendering capabilities to allow captions in CEA-708 format to be displayed on Youtube</li>
-      </ul>
-      <table class='infoTable'>
-        <tr>
-          <td>Game Engineer @ <span style="font-weight: 700"> Electronic Arts</span>, Redwood City</td>
-          <td class='infoRightCol'>2011/09 - 2011/12</td>
-        </tr>
-      </table>
-      <table class='infoTable'>
-        <tr>
-          <td>Software Engineer @ <span style="font-weight: 700"> Autodesk</span>, Montréal</td>
-          <td class='infoRightCol'>2011/01 - 2011/04</td>
-        </tr>
-      </table>
+      <div class='jobContainer'>
+        <div class='jobLogoBar'>
+          <image class='jobLogo roundImage' src='linkedin.png'></image>
+          <div class='verticalBar'></div>
+        </div>
+        <div class='job'>
+          <table class='infoTable'>
+            <tr>
+              <td>Backend Software Engineer @ <span style="font-weight: 700"> LinkedIn</span>, San Francisco</td>
+              <td class='infoRightCol'>2013/07 - Present</td>
+            </tr>
+          </table>
+          <ul>
+            <li>video</li>
+            <li>automation, devops, terraform, infrastructure, deployment system</li>
+            <li>Implemented scalable system that is responsible for detecting the language of all the slideshows uploaded through SlideShare</li>
+            <li>Worked on systems that drastically reduced spam and duplicate slideshows and improved SlideShare's overall content quality</li>
+          </ul>
+        </div>
+      </div>
+      <div class='jobContainer'>
+        <div class='jobLogoBar'>
+          <image class='jobLogo roundImage' src='https://www.sidefx.com/media/uploads/products/logos/ico_houdini.svg'></image>
+        </div>
+        <div class='job'>
+          <table class='infoTable'>
+            <tr>
+              <td>Software Engineer @ <span style="font-weight: 700"> Side Effects</span>, Toronto</td>
+              <td class='infoRightCol'>2012/09 - 2012/12</td>
+            </tr>
+          </table>
+          <ul>
+            <li>Created a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists</li>
+          </ul>
+        </div>
+      </div>
+      <div class='jobContainer'>
+        <div class='jobLogoBar'>
+          <image class='jobLogo roundImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/200px-Google_%22G%22_Logo.svg.png'></image>
+        </div>
+        <div class='job'>
+          <table class='infoTable'>
+            <tr>
+              <td>Accessibility Engineer @ <span style="font-weight: 700"> Google</span>, Mountain View</td>
+              <td class='infoRightCol'>2012/05 - 2012/08</td>
+            </tr>
+          </table>
+          <ul>
+            <li>Launched user captions customization features on Youtube that enables users to customize caption display styles in support of Communications and Video Accessibility Act technical requirements</li>
+            <li>Implemented new rendering capabilities to allow captions in CEA-708 format to be displayed on Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <div class='jobContainer'>
+        <div class='jobLogoBar'>
+          <image class='jobLogo roundImage' src='ea.png'></image>
+        </div>
+        <div class='job'>
+          <table class='infoTable'>
+            <tr>
+              <td>Game Engineer @ <span style="font-weight: 700"> Electronic Arts</span>, Redwood City</td>
+              <td class='infoRightCol'>2011/09 - 2011/12</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class='jobContainer autodesk'>
+        <div class='jobLogoBar'>
+          <image class='jobLogo roundImage' src='autodesk2.png'></image>
+        </div>
+        <div class='job'>
+          <table class='infoTable'>
+            <tr>
+              <td>Software Engineer @ <span style="font-weight: 700"> Autodesk</span>, Montréal</td>
+              <td class='infoRightCol'>2011/01 - 2011/04</td>
+            </tr>
+          </table>
+        </div>
+      </div>
       <h2>PROJECTS</h2>
       <hr>
       <p class='lowTopMargin'>

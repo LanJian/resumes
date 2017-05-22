@@ -98,12 +98,43 @@
           float: right;
         }
 
-        .round-image{
-          box-shadow: 0 0 2px rgba(0, 0, 0, .8);
-          filter: grayscale(50%);
+        .roundImage{
           border-radius: 50%;
-          width: 30px;
-          height: 30px;
+        }
+
+        .jobContainer{
+          display: inline-block;
+          width:100%;
+        }
+
+        .jobLogo{
+          display: block;
+          -#margin: auto;
+          max-width: 80%;
+          max-height: 80%;
+          filter: grayscale(70%);
+        }
+
+        .jobLogoBar{
+          float: left;
+          width: 5%;
+        }
+
+        .job{
+          margin-top: 7px;
+          float: right;
+          width: 95%;
+        }
+
+        .autodesk{
+          margin-top: 20px;
+        }
+
+        .verticalBar{
+          margin-top: 15px;
+          margin-left: 16px;
+          border-left: 3px solid #abbaab;
+          height: 115px;
         }
 
   %body
@@ -123,62 +154,95 @@
     .body
       %h2 TECHNICAL SKILLS
       %hr
-      %p.compPara
-        %b Languages:
-        Ruby, Java, GoLang, JavaScript, Python, C++, C, Haskell, HTML, CSS
-      %p.compPara
-        %b Technologies:
-        AWS, Nginx, Docker, OpenGL, WebGL, Git, Make, Bash
-      %p.compPara
-        %b Frameworks:
-        React, Node.Js, A-Frame, Three.Js, Rails
-      %p.compPara
-        %b Databases:
-        MySQL, MongoDB, DynamoDB, Redis
-      %p.compPara
-        %b Applications:
-        Unity, Photoshop, Illustrator, Autodesk Maya
+      %table.infoTable
+        %tr
+          %td
+          %td ***
+          %td **
+          %td *
+        %tr
+          %td
+            %b Languages
+          %td Ruby, Java
+          %td GoLang, JavaScript, Python, HTML, CSS
+          %td C++, C, Haskell,
+        %tr
+          %td
+            %b Technologies
+          %td AWS, Git, Bash
+          %td Docker, OpenGL, WebGL
+          %td Nginx, Make
+        %tr
+          %td
+            %b Frameworks
+          %td React, Node.Js, A-Frame, Three.Js, Rails, Sinatra
+        %tr
+          %td
+            %b Databases
+          %td MySQL, MongoDB, DynamoDB, Redis
+        %tr
+          %td
+            %b Applications
+          %td Unity, Photoshop, Illustrator, Autodesk Maya
 
       %h2 PROFESSIONAL EXPERIENCES
       %hr
 
-      %table.infoTable
-        %tr
-          %td Backend Software Engineer @ <span style="font-weight: 700"> LinkedIn</span>, San Francisco
-          %td.infoRightCol 2013/07 - Present
+      .jobContainer
+        .jobLogoBar
+          %image.jobLogo.roundImage{:src => 'linkedin.png'}
+          .verticalBar
+        .job
+          %table.infoTable
+            %tr
+              %td Backend Software Engineer @ <span style="font-weight: 700"> LinkedIn</span>, San Francisco
+              %td.infoRightCol 2013/07 - Present
+          %ul
+            %li video
+            %li automation, devops, terraform, infrastructure, deployment system
+            %li Implemented scalable system that is responsible for detecting the language of all the slideshows uploaded through SlideShare
+            %li Worked on systems that drastically reduced spam and duplicate slideshows and improved SlideShare's overall content quality
 
-      %ul
-        %li video
-        %li automation, devops, terraform, infrastructure, deployment system
-        %li Implemented scalable system that is responsible for detecting the language of all the slideshows uploaded through SlideShare
-        %li Worked on systems that drastically reduced spam and duplicate slideshows and improved SlideShare's overall content quality
+      .jobContainer
+        .jobLogoBar
+          %image.jobLogo.roundImage{:src => 'https://www.sidefx.com/media/uploads/products/logos/ico_houdini.svg'}
+        .job
+          %table.infoTable
+            %tr
+              %td Software Engineer @ <span style="font-weight: 700"> Side Effects</span>, Toronto
+              %td.infoRightCol 2012/09 - 2012/12
+          %ul
+            %li Created a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists
 
-      %table.infoTable
-        %tr
-          %td Software Engineer @ <span style="font-weight: 700"> Side Effects</span>, Toronto
-          %td.infoRightCol 2012/09 - 2012/12
+      .jobContainer
+        .jobLogoBar
+          %image.jobLogo.roundImage{:src => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/200px-Google_%22G%22_Logo.svg.png'}
+        .job
+          %table.infoTable
+            %tr
+              %td Accessibility Engineer @ <span style="font-weight: 700"> Google</span>, Mountain View
+              %td.infoRightCol 2012/05 - 2012/08
+          %ul
+            %li Launched user captions customization features on Youtube that enables users to customize caption display styles in support of Communications and Video Accessibility Act technical requirements
+            %li Implemented new rendering capabilities to allow captions in CEA-708 format to be displayed on Youtube
 
-      %ul
-        %li Created a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists
+      .jobContainer
+        .jobLogoBar
+          %image.jobLogo.roundImage{:src => 'ea.png'}
+        .job
+          %table.infoTable
+            %tr
+              %td Game Engineer @ <span style="font-weight: 700"> Electronic Arts</span>, Redwood City
+              %td.infoRightCol 2011/09 - 2011/12
 
-      %table.infoTable
-        %tr
-          %td Accessibility Engineer @ <span style="font-weight: 700"> Google</span>, Mountain View
-          %td.infoRightCol 2012/05 - 2012/08
-
-      %ul
-        %li Launched user captions customization features on Youtube that enables users to customize caption display styles in support of Communications and Video Accessibility Act technical requirements
-        %li Implemented new rendering capabilities to allow captions in CEA-708 format to be displayed on Youtube
-
-      %table.infoTable
-        %tr
-          %td Game Engineer @ <span style="font-weight: 700"> Electronic Arts</span>, Redwood City
-          %td.infoRightCol 2011/09 - 2011/12
-
-      %table.infoTable
-        %tr
-          %td Software Engineer @ <span style="font-weight: 700"> Autodesk</span>, Montréal
-          %td.infoRightCol 2011/01 - 2011/04
+      .jobContainer.autodesk
+        .jobLogoBar
+          %image.jobLogo.roundImage{:src => 'autodesk2.png'}
+        .job
+          %table.infoTable
+            %tr
+              %td Software Engineer @ <span style="font-weight: 700"> Autodesk</span>, Montréal
+              %td.infoRightCol 2011/01 - 2011/04
 
 
       %h2 PROJECTS
