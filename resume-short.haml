@@ -2,11 +2,12 @@
   %head
     %title Jack Huang's Resume
     %meta{:charset => "UTF-8"}
-    %link{:href => "https://fonts.googleapis.com/css?family=Old+Standard+TT", :rel => "stylesheet"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Catamaran", :rel => "stylesheet"}
     %style{:type => "text/css"}
       :plain
         * {
-          font-family: 'Old Standard TT', serif;
+          font-family: 'Catamaran', serif;
+          font-size: 14px;
         }
         .header{
           -webkit-print-color-adjust:exact;
@@ -112,7 +113,7 @@
           -#margin: auto;
           max-width: 80%;
           max-height: 80%;
-          filter: grayscale(70%);
+          -#filter: grayscale(70%);
         }
 
         .jobLogoBar{
@@ -126,15 +127,23 @@
           width: 95%;
         }
 
+        .jobDescription{
+          margin-top: 8px;
+          padding-left: 25px;
+        }
+
         .autodesk{
-          margin-top: 20px;
+          margin-top: 10px;
         }
 
         .verticalBar{
           margin-top: 15px;
           margin-left: 16px;
           border-left: 3px solid #abbaab;
-          height: 115px;
+        }
+
+        image{
+          image-rendering: pixelated;
         }
 
   %body
@@ -175,15 +184,21 @@
         %tr
           %td
             %b Frameworks
-          %td React, Node.Js, A-Frame, Three.Js, Rails, Sinatra
+          %td Rails, Sinatra
+          %td Node.Js, Express.Js, Three.Js
+          %td A-Frame, React
         %tr
           %td
             %b Databases
-          %td MySQL, MongoDB, DynamoDB, Redis
+          %td MySQL, DynamoDB
+          %td MongoDB
+          %td Redis
         %tr
           %td
             %b Applications
-          %td Unity, Photoshop, Illustrator, Autodesk Maya
+          %td Photoshop
+          %td Illustrator, Unity
+          %td Autodesk Maya
 
       %h2 PROFESSIONAL EXPERIENCES
       %hr
@@ -191,13 +206,13 @@
       .jobContainer
         .jobLogoBar
           %image.jobLogo.roundImage{:src => 'linkedin.png'}
-          .verticalBar
+          .verticalBar{:style => 'height: 107px'}
         .job
           %table.infoTable
             %tr
               %td Backend Software Engineer @ <span style="font-weight: 700"> LinkedIn</span>, San Francisco
               %td.infoRightCol 2013/07 - Present
-          %ul
+          %ul.jobDescription
             %li video
             %li automation, devops, terraform, infrastructure, deployment system
             %li Implemented scalable system that is responsible for detecting the language of all the slideshows uploaded through SlideShare
@@ -205,24 +220,26 @@
 
       .jobContainer
         .jobLogoBar
-          %image.jobLogo.roundImage{:src => 'https://www.sidefx.com/media/uploads/products/logos/ico_houdini.svg'}
+          %image.jobLogo.roundImage{:src => 'sidefx.png'}
+          .verticalBar{:style => 'height: 30px'}
         .job
           %table.infoTable
             %tr
               %td Software Engineer @ <span style="font-weight: 700"> Side Effects</span>, Toronto
               %td.infoRightCol 2012/09 - 2012/12
-          %ul
+          %ul.jobDescription
             %li Created a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists
 
       .jobContainer
         .jobLogoBar
-          %image.jobLogo.roundImage{:src => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/200px-Google_%22G%22_Logo.svg.png'}
+          %image.jobLogo.roundImage{:src => 'google.png'}
+          .verticalBar{:style => 'height: 50px'}
         .job
           %table.infoTable
             %tr
               %td Accessibility Engineer @ <span style="font-weight: 700"> Google</span>, Mountain View
               %td.infoRightCol 2012/05 - 2012/08
-          %ul
+          %ul.jobDescription
             %li Launched user captions customization features on Youtube that enables users to customize caption display styles in support of Communications and Video Accessibility Act technical requirements
             %li Implemented new rendering capabilities to allow captions in CEA-708 format to be displayed on Youtube
 
@@ -237,7 +254,7 @@
 
       .jobContainer.autodesk
         .jobLogoBar
-          %image.jobLogo.roundImage{:src => 'autodesk2.png'}
+          %image.jobLogo.roundImage{:src => 'autodesk.png'}
         .job
           %table.infoTable
             %tr
@@ -247,24 +264,20 @@
 
       %h2 PROJECTS
       %hr
-      %p.lowTopMargin
+      %p.lowTopMargin.lowBottomMargin
         %b
           %a{:href => "https://github.com/LanJian/Surreal"} https://github.com/LanJian/Surreal
-      %ul
-        %li Interactive world with a surrealist vibe
+      %p.lowTopMargin Interactive world with a surrealist vibe
 
-      %p.lowTopMargin
+      %p.lowTopMargin.lowBottomMargin
         %b
           %a{:href => "https://github.com/LanJian/Raytracers"} https://github.com/LanJian/Raytracers
-      %ul
-        %li Ray tracers in C++, Haskell, GoLang, and Ruby
+      %p.lowTopMargin Ray tracers in C++, Haskell, GoLang, and Ruby
 
-      %p.lowTopMargin
+      %p.lowTopMargin.lowBottomMargin
         %b
           %a{:href => "https://github.com/LanJian/Coffee2D"} https://github.com/LanJian/Coffee2D
-
-      %ul
-        %li HTML5 2D game engine
+      %p.lowTopMargin HTML5 2D game engine
 
 
       %h2 EDUCATION
@@ -273,8 +286,8 @@
       %table.infoTable
         %tr
           %td
-            %b Bachelor of Computer Science,
-            Fine Arts Minor
+            %b University of Waterloo,
+            Canada
           %td.infoRightCol Class of 2013
         %tr
-          %td University of Waterloo, Canada
+          %td Bachelor of Computer Science, Fine Arts Minor

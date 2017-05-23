@@ -2,10 +2,11 @@
   <head>
     <title>Jack Huang's Resume</title>
     <meta charset='UTF-8'>
-    <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
     <style type='text/css'>
       * {
-        font-family: 'Old Standard TT', serif;
+        font-family: 'Catamaran', serif;
+        font-size: 14px;
       }
       .header{
         -webkit-print-color-adjust:exact;
@@ -111,7 +112,7 @@
         -#margin: auto;
         max-width: 80%;
         max-height: 80%;
-        filter: grayscale(70%);
+        -#filter: grayscale(70%);
       }
       
       .jobLogoBar{
@@ -125,15 +126,23 @@
         width: 95%;
       }
       
+      .jobDescription{
+        margin-top: 8px;
+        padding-left: 25px;
+      }
+      
       .autodesk{
-        margin-top: 20px;
+        margin-top: 10px;
       }
       
       .verticalBar{
         margin-top: 15px;
         margin-left: 16px;
         border-left: 3px solid #abbaab;
-        height: 115px;
+      }
+      
+      image{
+        image-rendering: pixelated;
       }
     </style>
   </head>
@@ -187,19 +196,25 @@
           <td>
             <b>Frameworks</b>
           </td>
-          <td>React, Node.Js, A-Frame, Three.Js, Rails, Sinatra</td>
+          <td>Rails, Sinatra</td>
+          <td>Node.Js, Express.Js, Three.Js</td>
+          <td>A-Frame, React</td>
         </tr>
         <tr>
           <td>
             <b>Databases</b>
           </td>
-          <td>MySQL, MongoDB, DynamoDB, Redis</td>
+          <td>MySQL, DynamoDB</td>
+          <td>MongoDB</td>
+          <td>Redis</td>
         </tr>
         <tr>
           <td>
             <b>Applications</b>
           </td>
-          <td>Unity, Photoshop, Illustrator, Autodesk Maya</td>
+          <td>Photoshop</td>
+          <td>Illustrator, Unity</td>
+          <td>Autodesk Maya</td>
         </tr>
       </table>
       <h2>PROFESSIONAL EXPERIENCES</h2>
@@ -207,7 +222,7 @@
       <div class='jobContainer'>
         <div class='jobLogoBar'>
           <image class='jobLogo roundImage' src='linkedin.png'></image>
-          <div class='verticalBar'></div>
+          <div class='verticalBar' style='height: 107px'></div>
         </div>
         <div class='job'>
           <table class='infoTable'>
@@ -216,7 +231,7 @@
               <td class='infoRightCol'>2013/07 - Present</td>
             </tr>
           </table>
-          <ul>
+          <ul class='jobDescription'>
             <li>video</li>
             <li>automation, devops, terraform, infrastructure, deployment system</li>
             <li>Implemented scalable system that is responsible for detecting the language of all the slideshows uploaded through SlideShare</li>
@@ -226,7 +241,8 @@
       </div>
       <div class='jobContainer'>
         <div class='jobLogoBar'>
-          <image class='jobLogo roundImage' src='https://www.sidefx.com/media/uploads/products/logos/ico_houdini.svg'></image>
+          <image class='jobLogo roundImage' src='sidefx.png'></image>
+          <div class='verticalBar' style='height: 30px'></div>
         </div>
         <div class='job'>
           <table class='infoTable'>
@@ -235,14 +251,15 @@
               <td class='infoRightCol'>2012/09 - 2012/12</td>
             </tr>
           </table>
-          <ul>
+          <ul class='jobDescription'>
             <li>Created a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists</li>
           </ul>
         </div>
       </div>
       <div class='jobContainer'>
         <div class='jobLogoBar'>
-          <image class='jobLogo roundImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/200px-Google_%22G%22_Logo.svg.png'></image>
+          <image class='jobLogo roundImage' src='google.png'></image>
+          <div class='verticalBar' style='height: 50px'></div>
         </div>
         <div class='job'>
           <table class='infoTable'>
@@ -251,7 +268,7 @@
               <td class='infoRightCol'>2012/05 - 2012/08</td>
             </tr>
           </table>
-          <ul>
+          <ul class='jobDescription'>
             <li>Launched user captions customization features on Youtube that enables users to customize caption display styles in support of Communications and Video Accessibility Act technical requirements</li>
             <li>Implemented new rendering capabilities to allow captions in CEA-708 format to be displayed on Youtube</li>
           </ul>
@@ -272,7 +289,7 @@
       </div>
       <div class='jobContainer autodesk'>
         <div class='jobLogoBar'>
-          <image class='jobLogo roundImage' src='autodesk2.png'></image>
+          <image class='jobLogo roundImage' src='autodesk.png'></image>
         </div>
         <div class='job'>
           <table class='infoTable'>
@@ -285,42 +302,36 @@
       </div>
       <h2>PROJECTS</h2>
       <hr>
-      <p class='lowTopMargin'>
+      <p class='lowTopMargin lowBottomMargin'>
         <b>
           <a href='https://github.com/LanJian/Surreal'>https://github.com/LanJian/Surreal</a>
         </b>
       </p>
-      <ul>
-        <li>Interactive world with a surrealist vibe</li>
-      </ul>
-      <p class='lowTopMargin'>
+      <p class='lowTopMargin'>Interactive world with a surrealist vibe</p>
+      <p class='lowTopMargin lowBottomMargin'>
         <b>
           <a href='https://github.com/LanJian/Raytracers'>https://github.com/LanJian/Raytracers</a>
         </b>
       </p>
-      <ul>
-        <li>Ray tracers in C++, Haskell, GoLang, and Ruby</li>
-      </ul>
-      <p class='lowTopMargin'>
+      <p class='lowTopMargin'>Ray tracers in C++, Haskell, GoLang, and Ruby</p>
+      <p class='lowTopMargin lowBottomMargin'>
         <b>
           <a href='https://github.com/LanJian/Coffee2D'>https://github.com/LanJian/Coffee2D</a>
         </b>
       </p>
-      <ul>
-        <li>HTML5 2D game engine</li>
-      </ul>
+      <p class='lowTopMargin'>HTML5 2D game engine</p>
       <h2>EDUCATION</h2>
       <hr>
       <table class='infoTable'>
         <tr>
           <td>
-            <b>Bachelor of Computer Science,</b>
-            Fine Arts Minor
+            <b>University of Waterloo,</b>
+            Canada
           </td>
           <td class='infoRightCol'>Class of 2013</td>
         </tr>
         <tr>
-          <td>University of Waterloo, Canada</td>
+          <td>Bachelor of Computer Science, Fine Arts Minor</td>
         </tr>
       </table>
     </div>
