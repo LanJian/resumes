@@ -62,7 +62,7 @@
       }
       
       .lowBottomMargin{
-        margin-bottom:5px;
+        margin-bottom:2px;
       }
       
       .name{
@@ -92,6 +92,8 @@
       h2{
         margin-bottom: 0px;
         margin-top: 30px;
+        font-size: 12px;
+        color: #666;
       }
       
       .floatRight{
@@ -129,6 +131,7 @@
       .jobDescription{
         margin-top: 8px;
         padding-left: 25px;
+        color: #444444;
       }
       
       .autodesk{
@@ -144,18 +147,38 @@
       image{
         image-rendering: pixelated;
       }
+      
+      hr{
+        margin-top: 2px;
+      }
+      
+      .alignCenter{
+        text-align: center;
+      }
+      
+      .circles{
+        color: #555;
+      }
+      
+      tr.projectRow > td{
+        padding-bottom: 13px;
+      }
+      
+      table.projectsTable{
+        table-layout: fixed;
+      }
     </style>
   </head>
   <body>
     <table class='header'>
       <tr>
         <td class='name'>Jack Huang</td>
-        <td>Backend engineer interested in graphics, VR, and game development</td>
+        <td style='margin-right: 14px; margin-top: 15px; display: block;'>Backend engineer interested in graphics, VR, and game development</td>
       </tr>
       <tr>
         <td class='leftCol'>jackhxs@gmail.com</td>
         <td class='rightCol'>
-          <a href='http://jack-huang.com'>jack-huang.com</a>
+          <a href='https://www.linkedin.com/in/jack-huang-75943317/'>LinkedIn Profile</a>
         </td>
       </tr>
       <tr>
@@ -172,49 +195,49 @@
       <table class='infoTable'>
         <tr>
           <td></td>
-          <td>***</td>
-          <td>**</td>
-          <td>*</td>
+          <td class='alignCenter circles'>● ● ●</td>
+          <td class='alignCenter circles'>● ● ○</td>
+          <td class='alignCenter circles'>● ○ ○</td>
         </tr>
         <tr>
           <td>
             <b>Languages</b>
           </td>
-          <td>Ruby, Java</td>
-          <td>GoLang, JavaScript, Python, HTML, CSS</td>
-          <td>C++, C, Haskell,</td>
+          <td class='alignCenter'>Ruby, Java</td>
+          <td class='alignCenter'>GoLang, JavaScript, Python, HTML, CSS</td>
+          <td class='alignCenter'>C++, C, Haskell,</td>
         </tr>
         <tr>
           <td>
             <b>Technologies</b>
           </td>
-          <td>AWS, Git, Bash</td>
-          <td>Docker, OpenGL, WebGL</td>
-          <td>Nginx, Make</td>
+          <td class='alignCenter'>AWS, Terraform, Packer, Git</td>
+          <td class='alignCenter'>Jenkins, Docker, OpenGL, WebGL</td>
+          <td class='alignCenter'>Nginx, Make</td>
         </tr>
         <tr>
           <td>
             <b>Frameworks</b>
           </td>
-          <td>Rails, Sinatra</td>
-          <td>Node.Js, Express.Js, Three.Js</td>
-          <td>A-Frame, React</td>
+          <td class='alignCenter'>Rails, Sinatra</td>
+          <td class='alignCenter'>Node.Js, Express.Js, Three.Js</td>
+          <td class='alignCenter'>A-Frame, React</td>
         </tr>
         <tr>
           <td>
             <b>Databases</b>
           </td>
-          <td>MySQL, DynamoDB</td>
-          <td>MongoDB</td>
-          <td>Redis</td>
+          <td class='alignCenter'>MySQL, DynamoDB</td>
+          <td class='alignCenter'>MongoDB</td>
+          <td class='alignCenter'>Redis</td>
         </tr>
         <tr>
           <td>
             <b>Applications</b>
           </td>
-          <td>Photoshop</td>
-          <td>Illustrator, Unity</td>
-          <td>Autodesk Maya</td>
+          <td class='alignCenter'>Photoshop</td>
+          <td class='alignCenter'>Illustrator, Unity3D</td>
+          <td class='alignCenter'>Autodesk Maya</td>
         </tr>
       </table>
       <h2>PROFESSIONAL EXPERIENCES</h2>
@@ -222,7 +245,7 @@
       <div class='jobContainer'>
         <div class='jobLogoBar'>
           <image class='jobLogo roundImage' src='linkedin.png'></image>
-          <div class='verticalBar' style='height: 107px'></div>
+          <div class='verticalBar' style='height: 85px'></div>
         </div>
         <div class='job'>
           <table class='infoTable'>
@@ -232,8 +255,8 @@
             </tr>
           </table>
           <ul class='jobDescription'>
-            <li>video</li>
-            <li>automation, devops, terraform, infrastructure, deployment system</li>
+            <li>Responsible for video processing pipeline</li>
+            <li>Worked on AWS infrastructure automation with Terraform, Packer, and Jenkins</li>
             <li>Implemented scalable system that is responsible for detecting the language of all the slideshows uploaded through SlideShare</li>
             <li>Worked on systems that drastically reduced spam and duplicate slideshows and improved SlideShare's overall content quality</li>
           </ul>
@@ -242,7 +265,7 @@
       <div class='jobContainer'>
         <div class='jobLogoBar'>
           <image class='jobLogo roundImage' src='sidefx.png'></image>
-          <div class='verticalBar' style='height: 30px'></div>
+          <div class='verticalBar' style='height: 38px'></div>
         </div>
         <div class='job'>
           <table class='infoTable'>
@@ -259,7 +282,7 @@
       <div class='jobContainer'>
         <div class='jobLogoBar'>
           <image class='jobLogo roundImage' src='google.png'></image>
-          <div class='verticalBar' style='height: 50px'></div>
+          <div class='verticalBar' style='height: 60px'></div>
         </div>
         <div class='job'>
           <table class='infoTable'>
@@ -302,24 +325,62 @@
       </div>
       <h2>PROJECTS</h2>
       <hr>
-      <p class='lowTopMargin lowBottomMargin'>
-        <b>
-          <a href='https://github.com/LanJian/Surreal'>https://github.com/LanJian/Surreal</a>
-        </b>
-      </p>
-      <p class='lowTopMargin'>Interactive world with a surrealist vibe</p>
-      <p class='lowTopMargin lowBottomMargin'>
-        <b>
-          <a href='https://github.com/LanJian/Raytracers'>https://github.com/LanJian/Raytracers</a>
-        </b>
-      </p>
-      <p class='lowTopMargin'>Ray tracers in C++, Haskell, GoLang, and Ruby</p>
-      <p class='lowTopMargin lowBottomMargin'>
-        <b>
-          <a href='https://github.com/LanJian/Coffee2D'>https://github.com/LanJian/Coffee2D</a>
-        </b>
-      </p>
-      <p class='lowTopMargin'>HTML5 2D game engine</p>
+      <table class='infoTable projectsTable'>
+        <tr class='projectRow'>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/Surreal'>https://github.com/LanJian/Surreal</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>Interactive world with a surrealist vibe</p>
+          </td>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/tempest'>https://github.com/LanJian/Tempest</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>Turn-based strategy game set in the Elizabethan era</p>
+          </td>
+        </tr>
+        <tr class='projectRow'>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/Raytracers'>https://github.com/LanJian/Raytracers</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>Ray tracers in C++, Haskell, GoLang, and Ruby</p>
+          </td>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/follow-the-arrow'>https://github.com/LanJian/Follow-the-Arrow</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>Web friendly VR rhythm game built using A-Frame</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/Coffee2D'>https://github.com/LanJian/Coffee2D</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>HTML5 2D game engine</p>
+          </td>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/tank-chess'>https://github.com/LanJian/Tank-Chess</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>Clock-based tank combat game built using Unity3D</p>
+          </td>
+        </tr>
+      </table>
       <h2>EDUCATION</h2>
       <hr>
       <table class='infoTable'>
