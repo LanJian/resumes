@@ -1,7 +1,13 @@
 <html>
   <head>
     <title>Jack Huang's Resume</title>
+    <meta charset='UTF-8'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
     <style type='text/css'>
+      * {
+        font-family: 'Catamaran', serif;
+        font-size: 14px;
+      }
       .header{
         -webkit-print-color-adjust:exact;
         background-color:#45423F;
@@ -56,7 +62,7 @@
       }
       
       .lowBottomMargin{
-        margin-bottom:5px;
+        margin-bottom:2px;
       }
       
       .name{
@@ -86,10 +92,83 @@
       h2{
         margin-bottom: 0px;
         margin-top: 30px;
+        font-size: 12px;
+        color: #666;
       }
       
       .floatRight{
         float: right;
+      }
+      
+      .roundImage{
+        border-radius: 50%;
+      }
+      
+      .jobContainer{
+        display: inline-block;
+        width:100%;
+      }
+      
+      .jobLogo{
+        display: block;
+        -#margin: auto;
+        max-width: 80%;
+        max-height: 80%;
+        -#filter: grayscale(70%);
+      }
+      
+      .jobLogoBar{
+        float: left;
+        width: 5%;
+      }
+      
+      .job{
+        margin-top: 7px;
+        float: right;
+        width: 95%;
+      }
+      
+      .jobDescription{
+        margin-top: 8px;
+        padding-left: 25px;
+        color: #444444;
+      }
+      
+      .autodesk{
+        margin-top: 10px;
+      }
+      
+      .verticalBar{
+        margin-top: 15px;
+        margin-left: 16px;
+        border-left: 3px solid #abbaab;
+      }
+      
+      image{
+        image-rendering: pixelated;
+      }
+      
+      hr{
+        margin-top: 2px;
+      }
+      
+      .alignCenter{
+        text-align: center;
+      }
+      
+      .circles{
+        color: #555;
+        font-size: 20px;
+        line-height: 1em;
+        letter-spacing: 0.08em;
+      }
+      
+      tr.projectRow > td{
+        padding-bottom: 13px;
+      }
+      
+      table.projectsTable{
+        table-layout: fixed;
       }
     </style>
   </head>
@@ -97,322 +176,228 @@
     <table class='header'>
       <tr>
         <td class='name'>Jack Huang</td>
+        <td style='margin-right: 14px; margin-top: 15px; display: block;'>Backend engineer interested in graphics, VR, and game development</td>
       </tr>
       <tr>
         <td class='leftCol'>jackhxs@gmail.com</td>
         <td class='rightCol'>
-          <a href='http://jack-huang.com'>jack-huang.com</a>
+          <a href='http://github.com/lanjian'>github.com/lanjian</a>
         </td>
       </tr>
       <tr>
         <td class='leftCol'>415-316-6398</td>
         <td class='rightCol'>
-          <a href='http://github.com/lanjian'>github.com/lanjian</a>
+          <a href='https://www.linkedin.com/in/jackhxs'>linkedin.com/in/jackhxs</a>
         </td>
       </tr>
       <tr></tr>
     </table>
     <div class='body'>
-      <h2>SKILLS SUMMARY</h2>
-      <hr>
-      <ul>
-        <li>Excellent understanding of fundamental programming concepts including OOP, functional programming, and software design patterns obtained through school and self-study</li>
-        <li>Experienced with building web applications and Android applications</li>
-        <li>Familiar with game development; complemented by strong background in fine arts</li>
-        <li>Demonstrated creativity and skill in visual arts through personal artworks</li>
-        <li>Strong problem solving skills; demonstrated by math and programming contest results</li>
-        <li>Good communication skills; Fluent in Chinese</li>
-      </ul>
-      <h2>COMPUTER PROFICIENCY</h2>
-      <hr>
-      <p class='compPara'>
-        <b>Languages:</b>
-        JavaScript, C++, C, Java, Haskell, Python, Ruby, Scheme, ActionScript, Scala, VB, HTML, CSS, MEL
-      </p>
-      <p class='compPara'>
-        <b>Technologies/Tools:</b>
-        OpenGL, WebGL, Vim, Git, SVN, Perforce, Make, Bash, Batch, SSIS, JSP
-      </p>
-      <p class='compPara'>
-        <b>Frameworks/Libraries:</b>
-        jQuery, Node.Js, Three.Js, Closure, Rails, GWT, Swing, Facebook API
-      </p>
-      <p class='compPara'>
-        <b>Platforms:</b>
-        Linux, Windows, OS X, Android, iOS
-      </p>
-      <p class='compPara'>
-        <b>Databases:</b>
-        MongoDB, SQL, Redis
-      </p>
-      <p class='compPara'>
-        <b>Applications:</b>
-        Eclipse, Visual Studio, MS SQL Server, Photoshop, Illustrator, Flash, Autodesk Maya
-      </p>
-      <ul>
-        <li>Knowledge of 3D graphics concepts and technologies</li>
-        <li>Familiar with multithreading and concurrency</li>
-      </ul>
-      <h2>WORK EXPERIENCE</h2>
+      <h2>TECHNICAL SKILLS</h2>
       <hr>
       <table class='infoTable'>
         <tr>
-          <td>
-            <b>Backend Software Engineer</b>
-          </td>
-          <td class='infoRightCol'>San Francisco, CA</td>
+          <td></td>
+          <td class='alignCenter circles'>●●●</td>
+          <td class='alignCenter circles'>●●○</td>
+          <td class='alignCenter circles'>●○○</td>
         </tr>
-        <tr>
-          <td>SlideShare/LinkedIn</td>
-          <td class='infoRightCol'>July. 2013 - Present</td>
-        </tr>
-      </table>
-      <ul>
-        <li>Implemented scalable system that is responsible for detecting the language of all the slideshows uploaded through SlideShare</li>
-        <li>Worked on systems that drastically reduced spam and duplicate slideshows and improved SlideShare's overral content quality</li>
-        <li>Maintains and improves the Rich Media Platform that converts and stores all media content uploaded to SlideShare and LinkedIn</li>
-        <li>
-          <b>Technologies Used:</b>
-          Ruby, Rails, Puppet, EC2
-        </li>
-      </ul>
-      <table class='infoTable'>
         <tr>
           <td>
-            <b>Software Engineer</b>
+            <b>Languages</b>
           </td>
-          <td class='infoRightCol'>Toronto, ON</td>
+          <td class='alignCenter'>Ruby, Java, Python</td>
+          <td class='alignCenter'>GoLang, JavaScript, HTML, CSS</td>
+          <td class='alignCenter'>C++, C, Haskell,</td>
         </tr>
-        <tr>
-          <td>Side Effects Software Inc.</td>
-          <td class='infoRightCol'>Sept. 2012 - Dec. 2012</td>
-        </tr>
-      </table>
-      <ul>
-        <li>Actively involved in all aspects of a project that allows leading 3D animation package Houdini to be embedded into other applications</li>
-        <li>Created a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists</li>
-        <li>
-          <b>Technologies Used:</b>
-          C++, Houdini, Vim, Make, SVN
-        </li>
-      </ul>
-      <table class='infoTable'>
         <tr>
           <td>
-            <b>Accessibility Engineer</b>
+            <b>Technologies</b>
           </td>
-          <td class='infoRightCol'>Mountain View, CA</td>
+          <td class='alignCenter'>AWS, Terraform, Packer, Git</td>
+          <td class='alignCenter'>Jenkins, Docker, OpenGL, WebGL</td>
+          <td class='alignCenter'>Nginx, Make</td>
         </tr>
-        <tr>
-          <td>Google</td>
-          <td class='infoRightCol'>May. 2012 - Aug. 2012</td>
-        </tr>
-      </table>
-      <ul>
-        <li>Worked on video closed captioning as a member of the video accessibility team</li>
-        <li>Launched user captions customization features on Youtube that enables users to customize caption display styles in support of Communications and Video Accessibility Act technical requirements</li>
-        <li>Implemented new rendering capabilities to allow captions in CEA-708 format to be displayed on Youtube</li>
-        <li>
-          <b>Technologies Used:</b>
-          JavaScript, CSS, HTML, Python, Spitfire(Python template language), Closure
-        </li>
-      </ul>
-      <table class='infoTable'>
         <tr>
           <td>
-            <b>Platform and Game Engineer</b>
+            <b>Frameworks</b>
           </td>
-          <td class='infoRightCol'>Redwood Shores, CA</td>
+          <td class='alignCenter'>Rails, Sinatra</td>
+          <td class='alignCenter'>Node.Js, Express.Js, Three.Js</td>
+          <td class='alignCenter'>A-Frame, React</td>
         </tr>
-        <tr>
-          <td>Bioware San Francisco</td>
-          <td class='infoRightCol'>Sept. 2011 - Dec. 2011</td>
-        </tr>
-      </table>
-      <ul>
-        <li>Wrote, maintained, and deployed production level code for games with over 100,000 daily users</li>
-        <li>Re-designed and implemented a new gifting system using the new Facebook JavaScript API for the popular social game Dragon Age Legends</li>
-        <li>Developed in-game store and integrated it with in-house platform services for an unannounced core social game</li>
-        <li>
-          <b>Technologies Used:</b>
-          Java, ActionScript, JavaScript, CSS, HTML, GWT, Ruby, Rails, MongoDB, Facebook API, Adobe Flash Builder, Git
-        </li>
-      </ul>
-      <table class='infoTable'>
         <tr>
           <td>
-            <b>Software Developer</b>
+            <b>Databases</b>
           </td>
-          <td class='infoRightCol'>Montreal, QC</td>
+          <td class='alignCenter'>MySQL, DynamoDB</td>
+          <td class='alignCenter'>MongoDB</td>
+          <td class='alignCenter'>Redis</td>
         </tr>
-        <tr>
-          <td>Autodesk Media & Entertainment</td>
-          <td class='infoRightCol'>Jan. 2011 - Apr. 2011</td>
-        </tr>
-      </table>
-      <ul>
-        <li>Worked in a small startup team of 3 developers and contributed significantly to all aspects of the Distributed Simulation project, including design, development, documentation, and quality assurance</li>
-        <li>Researched and implemented solutions, through successively-refined prototypes, that would empower artists to produce results more quickly when working with 3D dynamics simulations in Autodesk 3ds Max, Maya, or Softimage</li>
-        <li>Designed and implemented a Particle Previewer web application using WebGL that displays particle simulation results</li>
-        <li>Adapted quickly to an agile, iterative development process</li>
-        <li>
-          <b>Technologies Used:</b>
-          Python, MEL, C++, Scala, WebGL, Visual Studio, Maya, 3ds Max, Softimage, Perforce
-        </li>
-      </ul>
-      <table class='infoTable'>
         <tr>
           <td>
-            <b>Java Developer</b>
+            <b>Applications</b>
           </td>
-          <td class='infoRightCol'>Toronto, ON</td>
-        </tr>
-        <tr>
-          <td>TD Securities</td>
-          <td class='infoRightCol'>May 2010 - Aug. 2010</td>
+          <td class='alignCenter'>Photoshop</td>
+          <td class='alignCenter'>Illustrator, Unity3D</td>
+          <td class='alignCenter'>Autodesk Maya</td>
         </tr>
       </table>
-      <ul>
-        <li>Responsible for development and support of TD Prime Brokerage website and service</li>
-        <li>Learned database technologies through database migration</li>
-        <li>Developed various features such as export reports for clients and widgets for the website according to business requirements using a combination of Java EE, SQL, and VB.NET technologies</li>
-        <li>Quickly responded to changing client requirements</li>
-        <li>
-          <b>Technologies Used:</b>
-          Java EE, JSP, VB, MS SQL Server, SSIS
-        </li>
-      </ul>
+      <h2>PROFESSIONAL EXPERIENCES</h2>
+      <hr>
+      <div class='jobContainer'>
+        <div class='jobLogoBar'>
+          <image class='jobLogo roundImage' src='linkedin.png'></image>
+          <div class='verticalBar' style='height: 85px'></div>
+        </div>
+        <div class='job'>
+          <table class='infoTable'>
+            <tr>
+              <td>Backend Software Engineer @ <span style="font-weight: 700"> LinkedIn</span>, San Francisco</td>
+              <td class='infoRightCol'>2013/07 - Present</td>
+            </tr>
+          </table>
+          <ul class='jobDescription'>
+            <li>Implemented LinkedIn's video and document processing pipeline</li>
+            <li>For GDPR: Audited and secured SlideShare's public API; Cleaned up 400TB of non-compliant user generated data</li>
+            <li>Created AWS infrastructure and deployment system with Terraform, Packer, and Jenkins for housing SlideShare's rich media conversion system</li>
+            <li>Created a scalable system that is responsible for detecting the language of slideshows uploaded through SlideShare</li>
+          </ul>
+        </div>
+      </div>
+      <div class='jobContainer'>
+        <div class='jobLogoBar'>
+          <image class='jobLogo roundImage' src='sidefx.png'></image>
+          <div class='verticalBar' style='height: 38px'></div>
+        </div>
+        <div class='job'>
+          <table class='infoTable'>
+            <tr>
+              <td>Software Engineer @ <span style="font-weight: 700"> Side Effects</span>, Toronto</td>
+              <td class='infoRightCol'>2012/09 - 2012/12</td>
+            </tr>
+          </table>
+          <ul class='jobDescription'>
+            <li>Created a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists</li>
+          </ul>
+        </div>
+      </div>
+      <div class='jobContainer'>
+        <div class='jobLogoBar'>
+          <image class='jobLogo roundImage' src='google.png'></image>
+          <div class='verticalBar' style='height: 60px'></div>
+        </div>
+        <div class='job'>
+          <table class='infoTable'>
+            <tr>
+              <td>Accessibility Engineer @ <span style="font-weight: 700"> Google</span>, Mountain View</td>
+              <td class='infoRightCol'>2012/05 - 2012/08</td>
+            </tr>
+          </table>
+          <ul class='jobDescription'>
+            <li>Launched user captions customization features on Youtube that enables users to customize caption display styles in support of Communications and Video Accessibility Act technical requirements</li>
+            <li>Implemented new rendering capabilities to allow captions in CEA-708 format to be displayed on Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <div class='jobContainer'>
+        <div class='jobLogoBar'>
+          <image class='jobLogo roundImage' src='ea.png'></image>
+        </div>
+        <div class='job'>
+          <table class='infoTable'>
+            <tr>
+              <td>Game Engineer @ <span style="font-weight: 700"> Electronic Arts</span>, Redwood City</td>
+              <td class='infoRightCol'>2011/09 - 2011/12</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class='jobContainer autodesk'>
+        <div class='jobLogoBar'>
+          <image class='jobLogo roundImage' src='autodesk.png'></image>
+        </div>
+        <div class='job'>
+          <table class='infoTable'>
+            <tr>
+              <td>Software Engineer @ <span style="font-weight: 700"> Autodesk</span>, Montréal</td>
+              <td class='infoRightCol'>2011/01 - 2011/04</td>
+            </tr>
+          </table>
+        </div>
+      </div>
       <h2>PROJECTS</h2>
       <hr>
-      <p class='lowTopMargin'>
-        <b>Coffee2D Game Engine</b>
-        <span class='floatRight'>Personal, Aug. 2012</span>
-      </p>
-      <ul>
-        <li>2D game engine for HTML5 canvas written in CoffeeScript that leverages features such as classes to better integrate with web games written in CoffeeScript</li>
-        <li>Designed to be light-weight and easy to use; includes features such as sprites, event handling, and scene graphs.</li>
-        <li>
-          Developed a multiplayer game using the engine at LinkedIn HackDay; source code is available at
-          <a href='http://github.com/lanjian/gamehack'>github.com/lanjian/gamehack</a>
-        </li>
-      </ul>
-      <p class='lowTopMargin'>
-        <b>Surreal (Graphics Art Project)</b>
-        <span class='floatRight'>Computer Graphics, Apr. 2012</span>
-      </p>
-      <ul>
-        <li>Interactive world inspired by proto-surrealist paintings of Georgio De Chirico and Yves Tanguy</li>
-        <li>Players can walk around in a vast procedurally generated world with an unsettling yet strangely serene atmosphere</li>
-        <li>Implemented shadows using shadow maps and a skydome with a day-night cycle to give the world a dynamic feel</li>
-        <li>Other features include a particle system and 3D collisions</li>
-      </ul>
-      <p class='lowTopMargin'>
-        <b>Ray Tracer</b>
-        <span class='floatRight'>Computer Graphics, Mar. 2012</span>
-      </p>
-      <ul>
-        <li>Created a ray tracer in C++ from scratch</li>
-        <li>Able to render spheres, cubes, and polygonal meshes</li>
-        <li>Features include phong lighting, hard shadows, mirror reflections, and linear fog</li>
-      </ul>
-      <p class='lowTopMargin'>
-        <b>HTML5 Multiplayer Tetris</b>
-        <span class='floatRight'>Personal, Dec. 2011</span>
-      </p>
-      <ul>
-        <li>Developed a Tetris clone using HTML5 technologies and CoffeeScript</li>
-        <li>Currently developing multiplayer head-to-head gameplay over the web with Node.Js</li>
-      </ul>
-      <p class='lowTopMargin'>
-        <b>Android MikroCalendar</b>
-        <span class='floatRight'>User Interfaces, Jul. 2011</span>
-      </p>
-      <ul>
-        <li>Built the Android user interface for a microblogging system for events</li>
-      </ul>
-      <p class='lowTopMargin'>
-        <b>OS/161 Operating System</b>
-        <span class='floatRight'>Operating Systems, Dec. 2010</span>
-      </p>
-      <ul>
-        <li>Worked in a team to develop an operating system built on top of OS/161</li>
-        <li>Requirements included implementing synchronization primitives, system calls, and a memory management system</li>
-      </ul>
+      <table class='infoTable projectsTable'>
+        <tr class='projectRow'>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/Surreal'>https://github.com/LanJian/Surreal</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>Interactive world with a surrealist vibe</p>
+          </td>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/tempest'>https://github.com/LanJian/Tempest</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>Turn-based strategy game set in the Elizabethan era</p>
+          </td>
+        </tr>
+        <tr class='projectRow'>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/Raytracers'>https://github.com/LanJian/Raytracers</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>Ray tracers in C++, Haskell, GoLang, and Ruby</p>
+          </td>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/follow-the-arrow'>https://github.com/LanJian/Follow-the-Arrow</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>Web friendly VR rhythm game built using A-Frame</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/Coffee2D'>https://github.com/LanJian/Coffee2D</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>HTML5 2D game engine</p>
+          </td>
+          <td>
+            <p class='lowTopMargin lowBottomMargin'>
+              <b>
+                <a href='https://github.com/LanJian/tank-chess'>https://github.com/LanJian/Tank-Chess</a>
+              </b>
+            </p>
+            <p class='lowTopMargin'>Clock-based tank combat game built using Unity3D</p>
+          </td>
+        </tr>
+      </table>
       <h2>EDUCATION</h2>
       <hr>
       <table class='infoTable'>
         <tr>
           <td>
-            <b>Candidate for Bachelor of Computer Science,</b>
-            Fine Arts Minor
+            <b>University of Waterloo,</b>
+            Canada
           </td>
-          <td class='infoRightCol'>Waterloo, ON</td>
+          <td class='infoRightCol'>Class of 2013</td>
         </tr>
         <tr>
-          <td>University of Waterloo</td>
-          <td class='infoRightCol'>Sept. 2008 - Apr. 2013</td>
+          <td>Bachelor of Computer Science, Fine Arts Minor</td>
         </tr>
       </table>
-      <div class='eduWaterloo'>
-        <ul>
-          <li>
-            Dean's Honours List 4 times
-          </li>
-          <li>
-            <b>Relevant courses:</b>
-            Computer Graphics, Artificial Intelligence, User Interfaces, Operating Systems
-          </li>
-        </ul>
-      </div>
-      <h2>AWARDS</h2>
-      <hr>
-      <ul>
-        <li>Nortel Networks Undergraduate Scholarship, Nortel Networks, Sept. 2008</li>
-        <li>President's Scholarship, University of Waterloo, Richmond Hill, ON, Sept. 2008</li>
-        <li>Top 2% in 2008 Euclid Contest/Student Honour Roll, University of Waterloo, Richmond Hill, ON, Apr. 2008</li>
-        <li>3rd Place Team in Boardwide Educational Computing Organization of Ontario (ECOO) Programming Contest, ECOO, York University, ON, Apr. 2008</li>
-      </ul>
-      <h2>ACTIVITIES & INTERESTS</h2>
-      <hr>
-      <table class='infoTable'>
-        <tr>
-          <td>
-            <b>VeloCity Mobile + Media Incubator - Member</b>
-          </td>
-          <td class='infoRightCol'>Waterloo, ON</td>
-        </tr>
-        <tr>
-          <td>University of Waterloo</td>
-          <td class='infoRightCol'>Jan. 2012 - Apr. 2012</td>
-        </tr>
-      </table>
-      <br>
-      <table class='infoTable'>
-        <tr>
-          <td>
-            <b>Ping Pong Club - Member</b>
-          </td>
-          <td class='infoRightCol'>Waterloo, ON</td>
-        </tr>
-        <tr>
-          <td>University of Waterloo</td>
-          <td class='infoRightCol'>Jan. 2009 - Apr. 2013</td>
-        </tr>
-      </table>
-      <br>
-      <table class='infoTable'>
-        <tr>
-          <td>
-            <b>Intramurals Soccer - Player</b>
-          </td>
-          <td class='infoRightCol'>Waterloo, ON</td>
-        </tr>
-        <tr>
-          <td>University of Waterloo</td>
-          <td class='infoRightCol'>May 2011 - Aug. 2011</td>
-        </tr>
-      </table>
-      <p>Enjoys ping pong, soccer, video games, drawing, painting, and photography</p>
     </div>
   </body>
 </html>

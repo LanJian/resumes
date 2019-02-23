@@ -25,5 +25,4 @@
 
 guard :haml do
   watch('resume.haml')
-  watch('resume-short.haml')
 end
