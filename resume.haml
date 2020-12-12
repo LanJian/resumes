@@ -176,7 +176,7 @@
     %table.header
       %tr
         %td.name Jack Huang
-        %td{:style => "margin-right: 14px; margin-top: 15px; display: block;"} Backend engineer interested in graphics, VR, and game development
+        -#%td{:style => "margin-right: 14px; margin-top: 15px; display: block;"} Backend engineer interested in graphics, VR, and game development
       %tr
         %td.leftCol jackhxs@gmail.com
         %td.rightCol
@@ -198,21 +198,21 @@
         %tr
           %td
             %b Languages
-          %td.alignCenter Ruby, Java, Python, JavaScript
+          %td.alignCenter Ruby, Java, Python, TS/JS
           %td.alignCenter GoLang, Scala, HTML, CSS
           %td.alignCenter C++, C, Haskell, Rust
         %tr
           %td
             %b Technologies
-          %td.alignCenter AWS, Terraform, Packer, Git
+          %td.alignCenter AWS, Terraform, Git, Bazel
           %td.alignCenter Jenkins, Docker, OpenGL, WebGL
           %td.alignCenter Nginx, Make
         %tr
           %td
             %b Frameworks
-          %td.alignCenter Rails, Sinatra
+          %td.alignCenter GraphQL, Rails, Sinatra
           %td.alignCenter Node.Js, Express.Js, Three.Js
-          %td.alignCenter Spark, A-Frame, React
+          %td.alignCenter A-Frame, React
         %tr
           %td
             %b Databases
@@ -232,29 +232,31 @@
       .jobContainer
         .jobLogoBar
           %image.jobLogo.roundImage{:src => 'ubiquity6.png'}
-          .verticalBar{:style => 'height: 40px'}
+          .verticalBar{:style => 'height: 125px'}
         .job
           %table.infoTable
             %tr
-              %td Backend Software Engineer @ <span style="font-weight: 700"> Ubiquity6</span>, San Francisco
+              %td Senior Backend Software Engineer @ <span style="font-weight: 700"> Ubiquity6</span>, San Francisco
               %td.infoRightCol 2019/04 - 2020/07
           %ul.jobDescription
-            %li Launched Display.Land - an app that uses unique photogrammetry technology to allow users to easily capture objects and environments in 3D
-            %li Part of a team that grew the app from launch to 500k users by building a robust and scalable serverless AWS stack
+            %li Launched Display.land - an unique photogrammetry app with 3D, AR, gameplay, and social components
+            %li Part of a team that built the app from idea to launch in six months, and grew it to 500k users with a robust and scalable serverless AWS stack
+            %li Delivered major app features and services such as location search, short-code generation, and space trailers using GraphQL/Apollo, API Gateway, Lambda, ECS, and Step Functions
+            %li Established and maintained key infrastructure pieces such as DNS, CDN, and databases using Route53, CloudFront, and DynamoDB
             %li Uplifted engineering culture and raised code quality by introducing a team-wide BDD testing standard
 
       .jobContainer
         .jobLogoBar
           %image.jobLogo.roundImage{:src => 'linkedin.png'}
-          .verticalBar{:style => 'height: 85px'}
+          .verticalBar{:style => 'height: 82px'}
         .job
           %table.infoTable
             %tr
               %td Backend Software Engineer @ <span style="font-weight: 700"> LinkedIn</span>, San Francisco
               %td.infoRightCol 2013/07 - 2018/10
           %ul.jobDescription
-            %li Implemented LinkedIn's video and document processing pipeline
-            %li For GDPR: Audited and secured SlideShare's public API; Cleaned up 400TB of non-compliant user generated data 
+            %li Designed and implemented LinkedIn's video and document processing pipeline that handles millions of requests per day
+            %li Contributed to SlideShare's GDPR compliance by auditing and securing it's public API and cleaning up 400TB of non-compliant user data 
             %li Created AWS infrastructure and deployment system with Terraform, Packer, and Jenkins for housing SlideShare's rich media conversion system
             %li Created a scalable system that is responsible for detecting the language of slideshows uploaded through SlideShare
 
@@ -268,7 +270,7 @@
               %td Software Engineer @ <span style="font-weight: 700"> Side Effects</span>, Toronto
               %td.infoRightCol 2012/09 - 2012/12
           %ul.jobDescription
-            %li Created a product that, by integrating smart digital assets from Houdini-powered website Orbolt.com with other 3D animation packages, expands the user base and creates powerful new workflows for artists
+            %li Delivered a new plugin for Autodesk Maya that allows artists to use smart digital assets from Houdini-powered website Orbolt.com in powerful new workflows
 
       .jobContainer
         .jobLogoBar
@@ -276,7 +278,7 @@
         .job
           %table.infoTable
             %tr
-              %td Accessibility Engineer @ <span style="font-weight: 700"> Google</span>, Mountain View
+              %td Software Engineer @ <span style="font-weight: 700"> Google</span>, Mountain View
               %td.infoRightCol 2012/05 - 2012/08
 
       .jobContainer.briefJobTopMargin
@@ -285,7 +287,7 @@
         .job
           %table.infoTable
             %tr
-              %td Game Engineer @ <span style="font-weight: 700"> Electronic Arts</span>, Redwood City
+              %td Software Engineer @ <span style="font-weight: 700"> Electronic Arts</span>, Redwood City
               %td.infoRightCol 2011/09 - 2011/12
 
       .jobContainer.briefJobTopMargin
@@ -307,25 +309,11 @@
               %b
                 %a{:href => "https://github.com/LanJian/Surreal"} https://github.com/LanJian/Surreal
             %p.lowTopMargin Interactive world with a surrealist vibe
-          %td
-            %p.lowTopMargin.lowBottomMargin
-              %b
-                %a{:href => "https://github.com/LanJian/tempest"} https://github.com/LanJian/Tempest
-            %p.lowTopMargin Turn-based strategy game set in the Elizabethan era
-
-        %tr.projectRow
-          %td
-            %p.lowTopMargin.lowBottomMargin
-              %b
-                %a{:href => "https://github.com/LanJian/Raytracers"} https://github.com/LanJian/Raytracers
-            %p.lowTopMargin Ray tracers in C++, Haskell, Go, Ruby, and Python
-          %td
-            %p.lowTopMargin.lowBottomMargin
-              %b
-                %a{:href => "https://github.com/LanJian/follow-the-arrow"} https://github.com/LanJian/Follow-the-Arrow
-            %p.lowTopMargin Web friendly VR rhythm game built using A-Frame
-
-        %tr
+          -#%td
+            -#%p.lowTopMargin.lowBottomMargin
+              -#%b
+                -#%a{:href => "https://github.com/LanJian/tempest"} https://github.com/LanJian/Tempest
+            -#%p.lowTopMargin Turn-based strategy game set in the Elizabethan era
           %td
             %p.lowTopMargin.lowBottomMargin
               %b
@@ -334,8 +322,27 @@
           %td
             %p.lowTopMargin.lowBottomMargin
               %b
-                %a{:href => "https://github.com/LanJian/tank-chess"} https://github.com/LanJian/Tank-Chess
-            %p.lowTopMargin Clock-based tank combat game built using Unity3D
+                %a{:href => "https://github.com/LanJian/Raytracers"} https://github.com/LanJian/Raytracers
+            %p.lowTopMargin Ray tracers in C++, Haskell, Go, Ruby, and Python
+
+        -#%tr.projectRow
+          -#%td
+            -#%p.lowTopMargin.lowBottomMargin
+              -#%b
+                -#%a{:href => "https://github.com/LanJian/follow-the-arrow"} https://github.com/LanJian/Follow-the-Arrow
+            -#%p.lowTopMargin Web friendly VR rhythm game built using A-Frame
+
+        -#%tr
+          -#%td
+            -#%p.lowTopMargin.lowBottomMargin
+              -#%b
+                -#%a{:href => "https://github.com/LanJian/Coffee2D"} https://github.com/LanJian/Coffee2D
+            -#%p.lowTopMargin HTML5 2D game engine
+          -#%td
+            -#%p.lowTopMargin.lowBottomMargin
+              -#%b
+                -#%a{:href => "https://github.com/LanJian/tank-chess"} https://github.com/LanJian/Tank-Chess
+            -#%p.lowTopMargin Clock-based tank combat game built using Unity3D
 
 
       %h2 EDUCATION
