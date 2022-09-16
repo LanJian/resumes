@@ -165,7 +165,7 @@
         }
 
         tr.projectRow > td{
-          padding-bottom: 13px;
+          padding-bottom: 0px;
         }
 
         table.projectsTable{
@@ -198,33 +198,27 @@
         %tr
           %td
             %b Languages
-          %td.alignCenter Ruby, Java, Python, TS/JS
-          %td.alignCenter GoLang, Scala, HTML, CSS
-          %td.alignCenter C++, C, Haskell, Rust
+          %td.alignCenter Python, Rust, Ruby
+          %td.alignCenter Java, TS/JS, GoLang
+          %td.alignCenter Scala, C++, C, Haskell
         %tr
           %td
             %b Technologies
-          %td.alignCenter AWS, Terraform, Git, Bazel
-          %td.alignCenter Jenkins, Docker, OpenGL, WebGL
-          %td.alignCenter Nginx, Make
+          %td.alignCenter AWS, Terraform, Docker, Make
+          %td.alignCenter Bazel, OpenGL, WebGL
+          %td.alignCenter Nginx, Jenkins
         %tr
           %td
             %b Frameworks
-          %td.alignCenter GraphQL, Rails, Sinatra
+          %td.alignCenter GraphQL, FastAPI, Rails, Sinatra
           %td.alignCenter Node.Js, Express.Js, Three.Js
           %td.alignCenter A-Frame, React
         %tr
           %td
             %b Databases
-          %td.alignCenter MySQL, DynamoDB
+          %td.alignCenter PostgreSQL, MySQL, DynamoDB
           %td.alignCenter Redis
           %td.alignCenter MongoDB
-        %tr
-          %td
-            %b Applications
-          %td.alignCenter Photoshop
-          %td.alignCenter Illustrator, Unity3D
-          %td.alignCenter Autodesk Maya
 
       %h2 PROFESSIONAL EXPERIENCES
       %hr
@@ -232,18 +226,16 @@
       .jobContainer
         .jobLogoBar
           %image.jobLogo.roundImage{:src => 'assets/alt.png'}
-          .verticalBar{:style => 'height: 125px'}
+          .verticalBar{:style => 'height: 105px'}
         .job
           %table.infoTable
             %tr
               %td Senior Software Engineer @ <span style="font-weight: 700"> ALT.xyz</span>, San Francisco
               %td.infoRightCol 2021/04 - Present
           %ul.jobDescription
-            %li Security
-            %li Auction
-            %li Banking
-            %li Infra
-            %li Tooling
+            %li With a team of 3 engineers, launched the Ledger service that handles all banking-related activities and money movements for the Alt Exchange Platform with an average monthly GMV of $5 millions
+            %li As lead infra engineer, built key infrastructure across all 3 teams, including monitoring, CI/CD, build/deployment pipelines, and ETL pipelines
+            %li Continuously led efforts to improve developer productivity; Projects include personal development stacks on AWS and CLI tools that saw adoption by the whole engineering team
 
       .jobContainer
         .jobLogoBar
@@ -279,16 +271,13 @@
       .jobContainer
         .jobLogoBar
           %image.jobLogo.roundImage{:src => 'assets/sidefx.png'}
-          .verticalBar{:style => 'height: 38px'}
         .job
           %table.infoTable
             %tr
               %td Software Engineer @ <span style="font-weight: 700"> Side Effects</span>, Toronto
               %td.infoRightCol 2012/09 - 2012/12
-          %ul.jobDescription
-            %li Delivered a new plugin for Autodesk Maya that allows artists to use smart digital assets from Houdini-powered website Orbolt.com in powerful new workflows
 
-      .jobContainer
+      .jobContainer.briefJobTopMargin
         .jobLogoBar
           %image.jobLogo.roundImage{:src => 'assets/google.png'}
         .job
@@ -306,30 +295,16 @@
               %td Software Engineer @ <span style="font-weight: 700"> Electronic Arts</span>, Redwood City
               %td.infoRightCol 2011/09 - 2011/12
 
-      .jobContainer.briefJobTopMargin
-        .jobLogoBar
-          %image.jobLogo.roundImage{:src => 'assets/autodesk.png'}
-        .job
-          %table.infoTable
-            %tr
-              %td Software Engineer @ <span style="font-weight: 700"> Autodesk</span>, Montréal
-              %td.infoRightCol 2011/01 - 2011/04
-
 
       %h2 PROJECTS
       %hr
       %table.infoTable.projectsTable
-        %tr.projectRow
+        %tr
           %td
             %p.lowTopMargin.lowBottomMargin
               %b
-                %a{:href => "https://github.com/LanJian/Surreal"} https://github.com/LanJian/Surreal
-            %p.lowTopMargin Interactive world with a surrealist vibe
-          -#%td
-            -#%p.lowTopMargin.lowBottomMargin
-              -#%b
-                -#%a{:href => "https://github.com/LanJian/tempest"} https://github.com/LanJian/Tempest
-            -#%p.lowTopMargin Turn-based strategy game set in the Elizabethan era
+                %a{:href => "https://github.com/LanJian/Raytracers"} https://github.com/LanJian/Raytracers
+            %p.lowTopMargin Ray tracers in various languages
           %td
             %p.lowTopMargin.lowBottomMargin
               %b
@@ -338,27 +313,8 @@
           %td
             %p.lowTopMargin.lowBottomMargin
               %b
-                %a{:href => "https://github.com/LanJian/Raytracers"} https://github.com/LanJian/Raytracers
-            %p.lowTopMargin Ray tracers in C++, Haskell, Go, Ruby, and Python
-
-        -#%tr.projectRow
-          -#%td
-            -#%p.lowTopMargin.lowBottomMargin
-              -#%b
-                -#%a{:href => "https://github.com/LanJian/follow-the-arrow"} https://github.com/LanJian/Follow-the-Arrow
-            -#%p.lowTopMargin Web friendly VR rhythm game built using A-Frame
-
-        -#%tr
-          -#%td
-            -#%p.lowTopMargin.lowBottomMargin
-              -#%b
-                -#%a{:href => "https://github.com/LanJian/Coffee2D"} https://github.com/LanJian/Coffee2D
-            -#%p.lowTopMargin HTML5 2D game engine
-          -#%td
-            -#%p.lowTopMargin.lowBottomMargin
-              -#%b
-                -#%a{:href => "https://github.com/LanJian/tank-chess"} https://github.com/LanJian/Tank-Chess
-            -#%p.lowTopMargin Clock-based tank combat game built using Unity3D
+                %a{:href => "https://github.com/LanJian/Surreal"} https://github.com/LanJian/Surreal
+            %p.lowTopMargin Interactive world with a surrealist vibe
 
 
       %h2 EDUCATION
@@ -366,9 +322,5 @@
 
       %table.infoTable
         %tr
-          %td
-            %b University of Waterloo,
-            Canada
+          %td Bachelor of Computer Science, Fine Arts Minor @ <span style="font-weight: 700"> University of Waterloo</span>, Canada
           %td.infoRightCol Class of 2013
-        %tr
-          %td Bachelor of Computer Science, Fine Arts Minor
